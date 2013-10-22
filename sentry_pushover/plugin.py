@@ -35,7 +35,7 @@ import requests
 
 class PushoverSettingsForm(forms.Form):
 
-    userkey = forms.CharField(help_text='Your user key. See https://pushover.net/')
+    userkey = forms.CharField(help_text='Your user (or group) key. See https://pushover.net/')
     apikey = forms.CharField(help_text='Application API token. See https://pushover.net/apps/')
 
     choices = ((logging.CRITICAL, 'CRITICAL'), (logging.ERROR, 'ERROR'), (logging.WARNING,
